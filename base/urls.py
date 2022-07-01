@@ -55,5 +55,3 @@ urlpatterns = [
 	# saved messages
 	path('saved-message/<str:message_type>/<str:message_id>/',views.SavedMessagesView.as_view(),name="saved-messages"),
 ]
-
-# C:\Users\Admin\AppData\Local\Programs\Python\Python39\Lib\site-packages\django\contrib\auth
