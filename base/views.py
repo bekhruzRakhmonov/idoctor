@@ -35,16 +35,6 @@ import logging
 
 logging.basicConfig(level=logging.DEBUG)
 logger = logging.getLogger(__name__)
-# https://support.lenovo.com/uz/en/solutions/ht505250-how-to-reduce-or-expand-system-partition-c-drive-size-in-windows
-
-to_be_decoded = "VGhpcyBpcyBHZWVrc0ZvckdlZWtzIDQ1NDU0NSAjICQlNjc4KiZeQCE="
-decoded = base64.b64decode(bytes(to_be_decoded, 'utf-8'))
-print(decoded.decode("utf-8"))
-
-print("[THREADING ACTIVE COUNT]",threading.active_count())
-print("[CURRENT THREAD]",threading.current_thread())
-print(threading.get_ident())
-print(threading.get_native_id())
 
 def get_cookie(request,response,ip):
     anon_user_data = request.COOKIES.get("data",None)
